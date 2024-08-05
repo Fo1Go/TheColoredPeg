@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>The Colored Peg — Keep Talking and Nobody Explodes Module</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+    <style>
+        .dark table, table {
+            margin: 1em auto;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">The Colored Peg</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Module Name.svg" class="diagram">
+                <h2>On the Subject of The Colored Peg</h2>
+                <p class="flavour-text">It is BBQ, doesn't it?</p>
+                <p>
+                    На модуле две кнопки “YES” и “NO”, цветной колышек с 5-ию цветами, 3 цветных светодиода справа,
+                    и 3 светодиода индикатор текущего этапа.
+                    Цвета на модуле могут быть красный, зелёный, синий, белый, черный, желтый, голубой и маджентовый цвет.
+                    Решите 3 этапа, чтобы решить модуль. При нажатии на неправильную кнопку или не в верное время,
+                    модуль выдаст ошибку. Первая сторона колышка, это та сторона, где есть маленькая точка.
+                </p>
+                <h3>Первый этап</h3>
+                <p>На первом этапе нажмите на YES если соблюдаются более 4 условий ниже.</p>
+                <ul>
+                    <li>На колышке всего лишь 3 цвета.</li>
+                    <li>Каждый цвет светодиода присутствует на колышке.</li>
+                    <li>Количество сторон с красным каналом больше 2.</li>
+                    <li>Бомба имеет горящий индикатор FRQ.</li>
+                    <li>Все цвета на колышке разные.</li>
+                    <li>На колышке и на светодиодах ровно 2 синего.</li>
+                    <li>На бомбе присутствует модуль “Colour Flash”.</li>
+                    <li>На бомбе 4 или меньше батареек.</li>
+                    <li>На бомбе присутствует порт DVI.</li>
+                    <li>Последняя цифра серийного номера четная.</li>
+                    <li>На колышке есть и черный и белый цвет.</li>
+                </ul>
+                <p>На первом этапе можно нажать кнопку в любое время</p>
+                <h3>Второй этап</h3>
+                <p>На втором этапе посчитайте количество красным, зелёным и синих каналов светодиодов и на колышеке с двух этапов.
+                    Если вы вышли за пределы столбца/строки продолжите с начала.
+                    Красный канал это строка, зелёный это столбец, а синий множетель. Найдите число, пересечение в таблице,
+                    умножьте на множитель, и отсчитайте с начала таблицы это число. Если дошли до конца, продолжите с начала.
+                    В таблице левая верхняя координата это (0, 0).
+                    Если это число больше 6, нажмите на "YES", иначе на "No".
+                </p>
+                <p>
+                    Нажмите на кнопку, когда последняя цифра таймера равняется появления красного канала на двух этапах,
+                    по модулю 9.
+                </p>
+            </div>
+            <div class="page-footer relative-footer">Page 1 of 2</div>
+        </div>
+
+        <div class="page page-bg-02">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">The Colored Peg</span>
+            </div>
+            <div class="page-content">
+              <table>
+                    <tr><td>5</td><td>1</td><td>4</td><td>2</td><td>9</td><td>7</td><td>8</td><td>3</td><td>6</td></tr>
+                    <tr><td>3</td><td>4</td><td>2</td><td>9</td><td>1</td><td>9</td><td>7</td><td>7</td><td>5</td></tr>
+                    <tr><td>2</td><td>7</td><td>1</td><td>7</td><td>5</td><td>6</td><td>3</td><td>1</td><td>7</td></tr>
+                    <tr><td>8</td><td>6</td><td>8</td><td>8</td><td>3</td><td>1</td><td>1</td><td>6</td><td>9</td></tr>
+                    <tr><td>7</td><td>2</td><td>9</td><td>5</td><td>4</td><td>3</td><td>4</td><td>5</td><td>1</td></tr>
+                    <tr><td>4</td><td>3</td><td>7</td><td>3</td><td>8</td><td>4</td><td>5</td><td>2</td><td>2</td></tr>
+                    <tr><td>6</td><td>8</td><td>6</td><td>4</td><td>7</td><td>5</td><td>2</td><td>9</td><td>3</td></tr>
+                    <tr><td>1</td><td>9</td><td>3</td><td>6</td><td>2</td><td>8</td><td>6</td><td>8</td><td>4</td></tr>
+                    <tr><td>9</td><td>5</td><td>5</td><td>1</td><td>6</td><td>2</td><td>9</td><td>4</td><td>5</td></tr>
+                </table>
+                <h3>Третий этап</h3>
+                <p>
+                    На третьем этапе посчитайте два значения по формулам. <br>
+                    Значение 1: "<code>(A [1] (B [2] С)) [4] C</code>"<br>
+                    Значение 2: "<code>B [3] (C [4] (A [5] C))</code>"<br>
+                    Где [n] это операция соответствующая n-ому цвету на колышке в порядке появления на модуле.
+                    A, B, C это значение цветов светодиодов.
+                </p>
+               <table>
+                   <tr>
+                       <td>Цвет</td>
+                       <td>Операция</td>
+                       <td>Значение</td>
+                   </tr>
+                   <tr>
+                       <td>Красный</td>
+                       <td>Лог. ИЛИ</td>
+                       <td>10110</td>
+                   </tr>
+                   <tr>
+                       <td>Зелёный</td>
+                       <td>Лог. И</td>
+                       <td>11111</td>
+                   </tr>
+                   <tr>
+                       <td>Синий</td>
+                       <td>Искл. ИЛИ</td>
+                       <td>00010</td>
+                   </tr>
+                   <tr>
+                       <td>Мажента</td>
+                       <td>Импликация</td>
+                       <td>10001</td>
+                   </tr>
+                   <tr>
+                       <td>Жёлтый</td>
+                        <td>НЕ И</td>
+                        <td>10111</td>
+                   </tr>
+                   <tr>
+                       <td>Голубой</td>
+                       <td>НЕ ИЛИ</td>
+                       <td>11010</td>
+                   </tr>
+                   <tr>
+                       <td>Белый</td>
+                       <td>Искл. НЕ И</td>
+                       <td>11100</td>
+                   </tr>
+                   <tr>
+                       <td>Черный</td>
+                       <td>Лог. И</td>
+                       <td>01101</td>
+                   </tr>
+               </table>
+               <p>
+                   Если второе число получилось больше первого, то нажмите "NO", иначе нажмите "YES".
+                   Нажмите кнопку когда меньшее из двух чисел является последней цифрой серийного номера
+               </p>
+            </div>
+            <div class="page-footer relative-footer">Page 2 of 2</div>
+        </div>
+    </div>
+</body>
+</html> 

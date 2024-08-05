@@ -1,1 +1,1 @@
-#[ModKit Wiki](../../wiki)
+The colored peg is regular KTANE module
