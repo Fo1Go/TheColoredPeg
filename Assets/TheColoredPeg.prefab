@@ -1036,7 +1036,7 @@ Transform:
   m_GameObject: {fileID: 1599632390767272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
   m_Children: []
   m_Father: {fileID: 4229714020837752}
   m_RootOrder: 1
@@ -2800,10 +2800,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   module: {fileID: 114063276476681494}
-  Bomb: {fileID: 114012634888457914}
+  bomb: {fileID: 114012634888457914}
   sound: {fileID: 114686178086758142}
-  ButtonYes: {fileID: 114207945630104740}
-  ButtonNo: {fileID: 114568456112145700}
+  buttonYes: {fileID: 114207945630104740}
+  buttonNo: {fileID: 114568456112145700}
 --- !u!114 &114976372932215722
 MonoBehaviour:
   m_ObjectHideFlags: 1
