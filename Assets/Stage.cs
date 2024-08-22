@@ -52,4 +52,9 @@ public class Stage
         }
         return faces;
     }
+
+    public static string GetColorNameByColor(Color color)
+    {
+        return ColorToColorName[color];
+    }
 }
