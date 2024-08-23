@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 4297805958846894}
   - component: {fileID: 23178306448502280}
   - component: {fileID: 102931573262664750}
+  - component: {fileID: 114408537066086976}
   m_Layer: 0
   m_Name: ColorblindTextLed2
   m_TagString: Untagged
@@ -169,6 +170,7 @@ GameObject:
   - component: {fileID: 33773903876909670}
   - component: {fileID: 136011950715110944}
   - component: {fileID: 23116878833407806}
+  - component: {fileID: 114885057645447932}
   m_Layer: 0
   m_Name: Cylinder5
   m_TagString: Untagged
@@ -187,6 +189,7 @@ GameObject:
   - component: {fileID: 33963373491459274}
   - component: {fileID: 136993784818183166}
   - component: {fileID: 23275932871287842}
+  - component: {fileID: 114726182368796734}
   m_Layer: 0
   m_Name: Cylinder2
   m_TagString: Untagged
@@ -220,6 +223,7 @@ GameObject:
   - component: {fileID: 4942132320879994}
   - component: {fileID: 23963053703327160}
   - component: {fileID: 102333060716326190}
+  - component: {fileID: 114154090403073756}
   m_Layer: 0
   m_Name: ColorblindTextPeg3
   m_TagString: Untagged
@@ -273,6 +277,7 @@ GameObject:
   - component: {fileID: 33633773934450558}
   - component: {fileID: 136710004902450800}
   - component: {fileID: 23901615804200380}
+  - component: {fileID: 114416789574907634}
   m_Layer: 0
   m_Name: Cylinder1
   m_TagString: Untagged
@@ -309,6 +314,7 @@ GameObject:
   - component: {fileID: 4630318943497200}
   - component: {fileID: 23923424255457608}
   - component: {fileID: 102011806694865930}
+  - component: {fileID: 114140383816171724}
   m_Layer: 0
   m_Name: ColorblindTextPeg1
   m_TagString: Untagged
@@ -345,6 +351,7 @@ GameObject:
   - component: {fileID: 4798904699022338}
   - component: {fileID: 23793520341970486}
   - component: {fileID: 102136502119388060}
+  - component: {fileID: 114770744894504630}
   m_Layer: 0
   m_Name: ColorblindTextPeg4
   m_TagString: Untagged
@@ -434,6 +441,7 @@ GameObject:
   - component: {fileID: 4140121478958080}
   - component: {fileID: 23118574993326822}
   - component: {fileID: 102470067010490986}
+  - component: {fileID: 114571418056880232}
   m_Layer: 0
   m_Name: ColorblindTextLed3
   m_TagString: Untagged
@@ -483,6 +491,7 @@ GameObject:
   - component: {fileID: 4392575164289874}
   - component: {fileID: 23696516960502196}
   - component: {fileID: 102723135464763294}
+  - component: {fileID: 114378716984771844}
   m_Layer: 0
   m_Name: ColorblindTextPeg2
   m_TagString: Untagged
@@ -500,6 +509,7 @@ GameObject:
   - component: {fileID: 4135558766383468}
   - component: {fileID: 23202759407642322}
   - component: {fileID: 102095192170091732}
+  - component: {fileID: 114778010399468412}
   m_Layer: 0
   m_Name: ColorblindTextLed1
   m_TagString: Untagged
@@ -517,6 +527,7 @@ GameObject:
   - component: {fileID: 4114618406444650}
   - component: {fileID: 23027946872322560}
   - component: {fileID: 102493628496771276}
+  - component: {fileID: 114888399823805544}
   m_Layer: 0
   m_Name: ColorblindTextPeg5
   m_TagString: Untagged
@@ -602,6 +613,7 @@ GameObject:
   - component: {fileID: 33304723586381638}
   - component: {fileID: 135578020791060328}
   - component: {fileID: 23629222068585990}
+  - component: {fileID: 114976629922869830}
   m_Layer: 0
   m_Name: FirstFaceIndicator
   m_TagString: Untagged
@@ -745,6 +757,7 @@ GameObject:
   - component: {fileID: 33648529648864342}
   - component: {fileID: 136955755300790422}
   - component: {fileID: 23440338938308230}
+  - component: {fileID: 114970676865612278}
   m_Layer: 0
   m_Name: Cylinder4
   m_TagString: Untagged
@@ -783,6 +796,7 @@ GameObject:
   - component: {fileID: 33584487705207064}
   - component: {fileID: 136067537448332962}
   - component: {fileID: 23830681426393718}
+  - component: {fileID: 114849156155848774}
   m_Layer: 0
   m_Name: Cylinder3
   m_TagString: Untagged
@@ -3152,7 +3166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShaderNames:
-  - KT/Mobile/Diffuse
+  - Standard
 --- !u!114 &114126229279751502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3165,7 +3179,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShaderNames:
-  - KT/Mobile/Diffuse
+  - Standard
+--- !u!114 &114140383816171724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407020564692984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - GUI/KT 3D Text
 --- !u!114 &114152770721666070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3179,6 +3206,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HighlightScale: {x: 1, y: 1, z: 1}
   OutlineAmount: 0
+--- !u!114 &114154090403073756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298131052156954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - GUI/KT 3D Text
 --- !u!114 &114207945630104740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3214,6 +3254,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderNames:
   - KT/Mobile/Diffuse
+--- !u!114 &114378716984771844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634832367900588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - GUI/KT 3D Text
+--- !u!114 &114408537066086976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1227351592479224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - GUI/KT 3D Text
 --- !u!114 &114409221975005254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3233,6 +3299,19 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1505163105107828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - Standard
+--- !u!114 &114416789574907634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1376561127252482}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
@@ -3290,7 +3369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShaderNames:
-  - KT/Mobile/Diffuse
+  - Standard
 --- !u!114 &114516614160251366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3366,7 +3445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShaderNames:
-  - Standard
+  - KT/Mobile/Diffuse
 --- !u!114 &114568456112145700
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3389,6 +3468,19 @@ MonoBehaviour:
   AllowSelectionWrapY: 0
   ForceSelectionHighlight: 0
   ForceInteractionHighlight: 0
+--- !u!114 &114571418056880232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1561824929750834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - GUI/KT 3D Text
 --- !u!114 &114635183439220734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3401,7 +3493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShaderNames:
-  - Standard
+  - KT/Mobile/Diffuse
 --- !u!114 &114686178086758142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3439,6 +3531,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderNames:
   - Standard
+--- !u!114 &114726182368796734
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1286079649061576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - KT/Mobile/Diffuse
 --- !u!114 &114734281165758502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3465,6 +3570,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderNames:
   - Standard
+--- !u!114 &114770744894504630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1439060145150922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - GUI/KT 3D Text
+--- !u!114 &114778010399468412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1661373008771592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - GUI/KT 3D Text
 --- !u!114 &114806740473517736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3489,6 +3620,19 @@ MonoBehaviour:
   m_Script: {fileID: -381104716, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114849156155848774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940260439635608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - KT/Mobile/Diffuse
 --- !u!114 &114882530332727134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3516,6 +3660,45 @@ MonoBehaviour:
   - {fileID: 102333060716326190}
   - {fileID: 102136502119388060}
   - {fileID: 102493628496771276}
+--- !u!114 &114885057645447932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1282875660238178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - KT/Mobile/Diffuse
+--- !u!114 &114888399823805544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672995786323270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - GUI/KT 3D Text
+--- !u!114 &114970676865612278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1920204349902892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - KT/Mobile/Diffuse
 --- !u!114 &114976372932215722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3529,6 +3712,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderNames:
   - Standard
+--- !u!114 &114976629922869830
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1819738773879456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - KT/Mobile/Diffuse
 --- !u!135 &135079716254974496
 SphereCollider:
   m_ObjectHideFlags: 1

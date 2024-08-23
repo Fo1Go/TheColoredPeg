@@ -13,8 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: TheColoredPeg
   title: The Colored Peg
-  author: FolGo, Borisp1014
-  description: 
+  author: FolGo, BorisP1014
+  description: 'The colored peg. By colored LEDs and colors on the peg find, when
+    you should press button and which button you should press.
+
+
+    Idea: BorisP1014
+
+    Developer: FolGo'
   version: 1.0.0
   outputFolder: build
-  previewImage: {fileID: 0}
+  previewImage: {fileID: 2800000, guid: a6e71b57ee3cc7f479eff94e5566f340, type: 3}

@@ -2,9 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using KModkit;
-using NUnit.Framework;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -223,23 +221,15 @@ public class TheColoredPegScript : MonoBehaviour
 		int B = numbers[stage.LEDsColors[1]];
 		int C = numbers[stage.LEDsColors[2]];
 		
-		int first = operators[stage.PegColors[3]](C, operators[stage.PegColors[0]](A, operators[stage.PegColors[1]](B, C)));
+		int first = operators[stage.PegColors[3]](operators[stage.PegColors[0]](A, operators[stage.PegColors[1]](B, C)), C);
 		int second = operators[stage.PegColors[2]](B, operators[stage.PegColors[3]](C, operators[stage.PegColors[4]](A, C)));
-
 		if (first >= second)
-		{
-			answer = yes;
-			_answers.Add(new List<string>(){answer, String.Format("{0}", second%10)});
-		}
+			_answers.Add(new List<string>(){yes, String.Format("{0}", mod(second, 10))});
 		else
-		{
-			answer = no;
-			_answers.Add(new List<string>(){answer, String.Format("{0}", first%10)});
-		}
+			_answers.Add(new List<string>(){no, String.Format("{0}", mod(first, 10))});
 		
 		Log(String.Format("Stage 3: `{0}` when last digit timer is {1}.", 
 			_answers[2][0], _answers[2][1]));
-
 	}
 
 	private void ButtonPress(string pressed)
@@ -393,6 +383,10 @@ public class TheColoredPegScript : MonoBehaviour
 		return stage;
 	}
 
+	int mod(int x, int m) {
+		return (x%m + m)%m;
+	}
+
 	private int XOR(int a, int b)
 	{
 		return a ^ b;
@@ -458,7 +452,14 @@ public class TheColoredPegScript : MonoBehaviour
 
 	private int XNOR(int a, int b)
 	{
-		return ~(a ^ b);
+		int number = a ^ b;
+		int len = a > b ? Convert.ToString(a, 2).Length : Convert.ToString(b, 2).Length; 
+		string newNumber = "";
+		foreach (var i in Convert.ToString(number, 2).PadLeft(len, '0'))
+		{
+			newNumber += i == '1' ? "0" : "1";
+		}
+		return Convert.ToInt32(newNumber, 2);
 	}
 
 	private void Incorrect()
