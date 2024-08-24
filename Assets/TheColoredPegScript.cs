@@ -404,62 +404,21 @@ public class TheColoredPegScript : MonoBehaviour
 
 	private int NOR(int a, int b)
 	{
-		int number = a | b;
-		int len = a > b ? Convert.ToString(a, 2).Length : Convert.ToString(b, 2).Length; 
-		string newNumber = "";
-		foreach (var i in Convert.ToString(number, 2).PadLeft(len, '0'))
-		{
-			newNumber += i == '1' ? "0" : "1" ;
-		}
-		return Convert.ToInt32(newNumber, 2);
+		return mod(~(a | b), 32);
 	}
 
 	private int NAND(int a, int b)
 	{
-		int number = a & b;
-		int len = a > b ? Convert.ToString(a, 2).Length : Convert.ToString(b, 2).Length; 
-		string newNumber = "";
-		foreach (var i in Convert.ToString(number, 2).PadLeft(len, '0'))
-		{
-			newNumber += i == '1' ? "0" : "1";
-		}
-		return Convert.ToInt32(newNumber, 2);
+		return mod(~(a & b), 32);
 	}
-
-	private int BWImpl(int a, int b)
-	{
-		if (a == 1 && b == 0)
-		{
-			return 0;
-		}
-		return 1;
-	}
-
 	private int IMPL(int a, int b)
 	{
-		string binaryA = Convert.ToString(a, 2);
-		string binaryB = Convert.ToString(b, 2);
-		int len = binaryA.Length > binaryB.Length ? binaryA.Length : binaryB.Length ;
-		binaryA = binaryA.PadLeft(len, '0');
-		binaryB = binaryB.PadLeft(len, '0');
-		string newNumber = "";
-		for (int index = 0; index < len; index++)
-		{
-			newNumber += BWImpl(binaryA[index]-'0', binaryB[index]-'0').ToString();
-		}
-		return Convert.ToInt32(newNumber, 2);
+		return mod(a & (~b), 32);
 	}
 
 	private int XNOR(int a, int b)
 	{
-		int number = a ^ b;
-		int len = a > b ? Convert.ToString(a, 2).Length : Convert.ToString(b, 2).Length; 
-		string newNumber = "";
-		foreach (var i in Convert.ToString(number, 2).PadLeft(len, '0'))
-		{
-			newNumber += i == '1' ? "0" : "1";
-		}
-		return Convert.ToInt32(newNumber, 2);
+		return mod(~(a ^ b), 32);
 	}
 
 	private void Incorrect()
