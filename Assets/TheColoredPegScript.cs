@@ -28,8 +28,8 @@ public class TheColoredPegScript : MonoBehaviour
 	private List<GameObject> _coloredLEDs;
 	private List<GameObject> _pegFaces;
 	private GameObject _peg;
-	private Material _ledOff;
-	private Material _ledOn;
+	private Color32 _ledOffColor;
+	private Color32 _ledOnColor;
 	private bool _isButtonPressed;
 	private bool _isColourblindActive;
 
@@ -91,12 +91,13 @@ public class TheColoredPegScript : MonoBehaviour
 			module.transform.Find("Peg").transform.Find("Faces").transform.Find("Face4").gameObject,
 			module.transform.Find("Peg").transform.Find("Faces").transform.Find("Face5").gameObject
 		};
-		_ledOff = Resources.Load<Material>("Materials/OffLed");
-		_ledOn = Resources.Load<Material>("Materials/OnLed");
+        
+		_ledOffColor = new Color(0,0,0,0.9f);
+		_ledOnColor = new Color(1,1,1,0.9f);
+		
 		for (int index = 0; index < _stageLEDs.Count; index++)
-		{
 			_stages.Add(GenerateStage());
-		}
+		
 
 		_currentStage = _stages[_currentStageIndex];
 		SetStage(_currentStage);
@@ -185,7 +186,7 @@ public class TheColoredPegScript : MonoBehaviour
 		int countGreen = bothStagesColors.Count(x => x.g > 0.05f);
 		int countBlue = bothStagesColors.Count(x => x.b > 0.05f);
 		int value = table[countRed%matrixSize][countGreen%matrixSize] * countBlue % (matrixSize * matrixSize);
-		if (table[(int)(value/matrixSize)][value % matrixSize] > 6)
+		if (table[(value/matrixSize)][value % matrixSize] > 6)
 			answer = yes;
 		else
 			answer = no;
@@ -320,9 +321,9 @@ public class TheColoredPegScript : MonoBehaviour
 		for (var index = 0; index < _stageLEDs.Count; index++)
 		{
 			if (index < _currentStageIndex)
-				_stageLEDs[index].GetComponent<Renderer>().material = _ledOn;
+				_stageLEDs[index].GetComponent<Renderer>().material.color = _ledOnColor;
 			else
-				_stageLEDs[index].GetComponent<Renderer>().material = _ledOff;
+				_stageLEDs[index].GetComponent<Renderer>().material.color = _ledOffColor;
 		}
 	}
 
