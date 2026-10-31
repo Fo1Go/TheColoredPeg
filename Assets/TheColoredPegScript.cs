@@ -414,7 +414,7 @@ public class TheColoredPegScript : MonoBehaviour
 	}
 	private int IMPL(int a, int b)
 	{
-		return mod(a & (~b), 32);
+		return mod((~a) | b, 32);
 	}
 
 	private int XNOR(int a, int b)
